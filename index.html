@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment3, Part 2: Adding AJAX and HTML</title>
+  <script src='gists.js'></script>
+</head>
+<body>
+  <!--form action="https://api.github.com/gists" method="get"-->
+  <div>
+  	<label>How many pages of results to display? (1-5)</label>
+    <input type="number" name="numpage" min="1" max="5">
+  </div>
+  <div>
+    <input type="checkbox" name="language" value="Javascript">Javascript
+  </div>
+  <div>
+    <input type="checkbox" name="language" value="SQL">SQL
+  </div>
+  <div>
+    <input type="checkbox" name="language" value="JSON">JSON
+  </div>
+  <div>
+    <input type="checkbox" name="language" value="Python">Python
+  </div>
+  <div>
+    <input type="button" value="Fetch Gists" onclick="getGists()" name="Fetch Gists">
+  </div>
+    <!--input type="submit" value="Fetch Gists"-->
+  </form>
+
+  <div id="gists"></div>
+
+  <div id="favored-gists"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+#gists {
+	float:left;
+	width:50%;
+}
+
+#favored-gists {
+	float:right;
+	width:50%;
+}

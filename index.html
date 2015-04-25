@@ -3,35 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <title>Assignment3, Part 2: Adding AJAX and HTML</title>
+  <link href="gistsStyles.css" rel="stylesheet" type="text/css">
   <script src='gists.js'></script>
 </head>
 <body>
   <!--form action="https://api.github.com/gists" method="get"-->
   <div>
+  <section>
+    <fieldset>
   	<label>How many pages of results to display? (1-5)</label>
-    <input type="number" name="numpage" min="1" max="5">
+    <select id="numpage" name="numpage">
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5</option>
+    </fieldset>
+    </select>
   </div>
+
+  <fieldset>
   <div>
     <input type="checkbox" name="language" value="Javascript">Javascript
   </div>
+
   <div>
     <input type="checkbox" name="language" value="SQL">SQL
   </div>
+
   <div>
     <input type="checkbox" name="language" value="JSON">JSON
   </div>
+
   <div>
     <input type="checkbox" name="language" value="Python">Python
   </div>
+  </fieldset>
+  
   <div>
     <input type="button" value="Fetch Gists" onclick="getGists()" name="Fetch Gists">
+  </section>
   </div>
     <!--input type="submit" value="Fetch Gists"-->
   </form>
 
-  <div id="gists"></div>
+  <div id="gists">
+    <h5>Gists</h5>
+  </div>
 
-  <div id="favored-gists"></div>
+  <div id="favored-gists">
+    <h5>Favorite Gists</h5>
+  </div>
 
 </body>
 

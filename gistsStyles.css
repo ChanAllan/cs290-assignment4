@@ -1,3 +1,7 @@
+fieldset {
+	width: 25%;
+}
+
 #gists {
 	float:left;
 	width:50%;
@@ -7,3 +11,4 @@
 	float:right;
 	width:50%;
 }
+
